@@ -1,0 +1,53 @@
+herbalife_config:
+  product_types:
+    skin_booster:
+      - Skin Booster
+      - Booster
+      - Beauty Booster
+    formula_1:
+      - Formula 1
+      - F1
+      - Meal Replacement
+    vitamin_complex:
+      - Vitamin Complex
+      - Multivitamin
+      - Vitamins
+    collagen_mix:
+      - Collagen Mix
+      - Collagen
+      - Beauty Mix
+    specialty_blend:
+      - Specialty Blend
+      - Special Blend
+  
+  flavors:
+    - orange
+    - vanilla
+    - chocolate
+    - berry
+    - unflavored
+
+  product_codes:
+    pattern: "\\d{3,4}[/-]\\d{3,4}"
+
+alert_thresholds:
+  empty_space: 0.2
+  low_stock: 3
+  skin_booster: 5
+  formula_1: 10
+  vitamin_complex: 7
+  collagen_mix: 4
+  specialty_blend: 3
+
+paths:
+  model: models/yolov8n-herbalife.pt
+  database: data/herbalife.db
+  uploads: data/herbalife_uploads/
+
+expected_products:
+  - skin_booster
+  - formula_1
+  - vitamin_complex
+  - collagen_mix
+  - specialty_blend
+
