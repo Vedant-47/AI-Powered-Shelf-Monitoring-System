@@ -1,7 +1,9 @@
 streamlit
 pillow
-ultralytics
-opencv-python
 torch
-numpy
-sqlite3-binary
+ultralytics
+opencv-python-headless==4.9.0.80
+numpy<2
+pytesseract
+
+
