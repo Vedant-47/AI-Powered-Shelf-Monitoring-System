@@ -1,7 +1,0 @@
-streamlit
-pillow
-ultralytics
-opencv-python
-torch
-numpy
-sqlite3-binary
