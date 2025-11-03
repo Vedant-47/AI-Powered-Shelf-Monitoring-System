@@ -3,7 +3,8 @@ import sqlite3
 from datetime import datetime
 from PIL import Image
 import os
-from utils.detection import HerbalifeDetector
+from detection import HerbalifeDetector
+
 
 # Initialize detector and database
 detector = HerbalifeDetector()
@@ -129,3 +130,4 @@ elif menu == "Alerts":
         st.success("No active alerts")
 
 conn.close()
+
