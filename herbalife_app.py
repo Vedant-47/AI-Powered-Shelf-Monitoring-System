@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime
 from PIL import Image
 import os
-from detection import HerbalifeDetector
+from utils.detection import HerbalifeDetector
 
 
 # Initialize detector and database
