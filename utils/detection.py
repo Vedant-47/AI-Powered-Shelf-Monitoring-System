@@ -7,6 +7,7 @@ from ultralytics import YOLO
 from PIL import Image
 import yaml
 from datetime import datetime
+import platform
 
 class HerbalifeDetector:
     def __init__(self):
@@ -125,6 +126,7 @@ class HerbalifeDetector:
             'timestamp': str(datetime.now()),
             'alerts': alerts
         }
+
 
 
 
