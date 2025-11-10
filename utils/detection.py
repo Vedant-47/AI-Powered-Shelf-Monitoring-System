@@ -10,8 +10,12 @@ from datetime import datetime
 
 class HerbalifeDetector:
     def __init__(self):
-        # Set path to Tesseract executable
-        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+        # Set path to Tesseract executabl
+    if platform.system() == "Windows":
+        pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    else:
+        pytesseract.pytesseract.tesseract_cmd = "tesseract"
+
 
         # Load configuration from YAML
         with open('config/config.yaml') as f:
@@ -121,4 +125,5 @@ class HerbalifeDetector:
             'timestamp': str(datetime.now()),
             'alerts': alerts
         }
+
 
